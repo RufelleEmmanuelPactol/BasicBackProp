@@ -1,0 +1,10 @@
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.csproj.AssemblyReference.cache
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.Properties.Resources.resources
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.csproj.GenerateResource.cache
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.csproj.CoreCompileInputs.cache
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\bin\Debug\BackPropagationGates.exe.config
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\bin\Debug\BackPropagationGates.exe
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\bin\Debug\BackPropagationGates.pdb
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.exe
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.pdb
+C:\Users\rufel\RiderProjects\BackPropagationGates\BackPropagationGates\obj\Debug\BackPropagationGates.Form1.resources
