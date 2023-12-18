@@ -214,7 +214,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(183, 24);
             this.label13.TabIndex = 21;
-            this.label13.Text = "Accuracy: ";
+            this.label13.Text = "Assumed Value:";
             // 
             // label14
             // 
@@ -271,7 +271,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(101, 34);
             this.button6.TabIndex = 27;
-            this.button6.Text = "Use NN1";
+            this.button6.Text = "Train First";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -281,7 +281,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(101, 34);
             this.button7.TabIndex = 28;
-            this.button7.Text = "Use NN2";
+            this.button7.Text = "Train First";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

@@ -268,18 +268,14 @@ namespace BackPropagationGates
     neuralNetwork.learn();
 }
 
-
-    public void trigger()
-    {
-      MessageBox.Show("TRIGGER");
-    }
+    
 
 
 
     private void OptimizeAccordinglyThread2()
     {
       bool breaking = false;
-      HiddenLayersSoFar = 20;
+      HiddenLayersSoFar = 0;
       while (!breaking)
       {
         HiddenLayersSoFar++;
@@ -291,12 +287,16 @@ namespace BackPropagationGates
         for (TotalEpochs = 0; TotalEpochs <= LocalMaxEpoch; TotalEpochs++)
         {
           if (breaking) return;
-          if (TotalEpochs % 500 == 0)
+          if (TotalEpochs % 56 == 0)
           {
             if (IsViable(NeuralNetwork2))
             {
-                  MessageBox.Show($"Optimal solution found.");
+                 
+                  
+                  button7.Text = "Use NN2";
+                  n2 = true;
                   breaking = true;
+                  MessageBox.Show($"Optimal solution found.");
                   return; // Exiting the function
                   
             }
@@ -319,10 +319,10 @@ namespace BackPropagationGates
     private void OptimizeAccordingly()
     {
       bool breaking = false;
-      HiddenLayersSoFar = 20;
+      HiddenLayersSoFar = 0;
       while (!breaking)
       {
-        HiddenLayersSoFar += 5;
+        HiddenLayersSoFar += 1;
         hLayerCounter.Invoke((MethodInvoker)(() => hLayerCounter.Text = HiddenLayersSoFar.ToString()));
 
         NeuralNetwork = new NeuralNet(4, HiddenLayersSoFar, 1);
@@ -332,13 +332,17 @@ namespace BackPropagationGates
         for (int tEpochs = 0; tEpochs <= localMaxEpochs; tEpochs++)
         {
           if (breaking) return;
-          if (tEpochs % 500 == 0)
+          if (tEpochs % 43 == 0)
           {
             if (IsViable(NeuralNetwork))
             {
-              MessageBox.Show($"Optimal solution found.");
+              
+              button6.Text = "Use NN1";
+              n1 = true;
               breaking = true;
+              MessageBox.Show($"Optimal solution found.");
               return; // Exiting the function
+              
                   
             }
 
@@ -408,13 +412,17 @@ namespace BackPropagationGates
 
     private void button5_Click(object sender, EventArgs e)
     {
+     
       if (button5.Text == "0")
         button5.Text = "1";
       else button5.Text = "0";
     }
 
+    private bool n1 = false;
+    private bool n2 = false;
     private void button6_Click(object sender, EventArgs e)
     {
+      if (!n1) return;
       var result = calculate(NeuralNetwork);
       textBox1.Text = result.ToString();
       textBox2.Text = discretize(result);
@@ -443,6 +451,7 @@ namespace BackPropagationGates
 
   private void button7_Click(object sender, EventArgs e)
   {
+    if (!n2) return;
     var result = calculate(NeuralNetwork2);
     textBox1.Text = result.ToString();
     textBox2.Text = discretize(result);
